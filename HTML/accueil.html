@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoride</title>
+
+    <!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EcoRide</title>
+       <link rel="stylesheet" href="/CSS/accueil.css">
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <header class="p-3 mb-3 border-bottom bg-light">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-between"
+            >
+              <!-- Logo -->
+              <a
+                href="/images/ECORIDE logo.png"
+                class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+              >
+              </a>
+
+              <!-- Navigation -->
+              <ul class="nav">
+                <li><a href="/images/ECORIDE logo.png"></a></li>
+                <li><a href="/HTML/accueil.html" class="nav-link px-3 text-dark">Accueil</a></li>
+                <li><a href="/HTML/utilisateur.html" class="nav-link px-3 text-dark">Utilisateur</a></li>
+                <li><a href="/HTML/contact.html" class="nav-link px-3 text-dark">Contact</a></li>
+            
+                <li>
+                  <a href="/HTML/connexion.html" class="nav-link px-3 text-dark">Connexion</a>
+                </li>
+              </ul>
+
+             
+              <!-- Recherche -->
+              <form class="d-flex" role="search">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Recherche..."
+                  aria-label="Recherche"
+                />
+              </form>
+            </div>
+          </div>
+        </header>
+
+        <main class="container mt-5">
+          <section class="text-center">
+            <h1 class="display-4">Bienvenue sur EcoRide</h1>
+            <p class="lead">
+              La plateforme de covoiturage pensée pour l’écologie et votre
+              porte-monnaie.
+            </p>
+          </section>
+          <section class="container mt-5" id="formulaire-recherche">
+            <h2 class="text-center mb-4">Rechercher un covoiturage</h2>
+            <form class="row g-3 justify-content-center">
+              <!-- Ville de départ -->
+              <div class="col-md-3">
+                <label for="depart" class="form-label">Ville de départ</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="depart"
+                  placeholder="Ex: Paris"
+                />
+              </div>
+
+              <!-- Ville d’arrivée -->
+              <div class="col-md-3">
+                <label for="arrivee" class="form-label">Ville d’arrivée</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="arrivee"
+                  placeholder="Ex: Lyon"
+                />
+              </div>
+
+              <!-- Date -->
+              <div class="col-md-3">
+                <label for="date" class="form-label">Date du trajet</label>
+                <input type="date" class="form-control" id="date" />
+              </div>
+
+              <!-- Nombre de passagers -->
+<div class="col-md-3">
+  <label for="passagers" class="form-label">Nombre de passagers</label>
+  <select id="passagers" class="form-control">
+    <option value="">Choisir...</option>
+    <option value="1">1 passager</option>
+    <option value="2">2 passagers</option>
+    <option value="3">3 passagers</option>
+    <option value="4">4 passagers</option>
+    <option value="5+">5 ou plus</option>
+  </select>
+</div>
+
+
+              <!-- Bouton Rechercher -->
+              <div class="col-12 text-center mt-3">
+                <button type="submit" class="btn btn-success btn-lg">
+                  🔍 Rechercher
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <img
+            src="/images/istockphoto-2178144704-612x612 (1).webp"
+            alt="image ride"
+          />
+
+          <section class="row mt-5 text-center">
+            <div class="col-md-4">
+              <h3>🌱 Écologique</h3>
+              <p>
+                Voyagez avec des véhicules électriques et réduisez votre impact
+                carbone.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>💸 Économique</h3>
+              <p>
+                Partagez vos frais de trajet pour économiser tout en vous
+                déplaçant.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>🤝 Communautaire</h3>
+              <p>
+                Une communauté engagée et bienveillante pour voyager en toute
+                confiance.
+              </p>
+            </div>
+          </section>
+
+          <section class="row mt-5 text-center">
+            <div class="col-md-4">
+              <img src="/images/TERRE.jpg" alt="TERRE">
+              <strong><h3>Moins de CO₂, plus d’économies.</h3></strong>
+              <p>Rejoignez le mouvement dès aujourd’hui.</p>
+
+
+        </main>
+
+        <footer class="text-center p-4 bg-light mt-5 border-top">
+          <p>
+            Contact : <a href="mailto:contact@ecoride.fr">contact@ecoride.fr</a>
+          </p>
+          <a href="/HTML/mentionslgl.html">Mentions légales</a>
+        </footer>
+
+        <form method="POST" action="/PHP/recherche_trajet.php">
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/JS/accueil.js"></script>
+        <script src="/JS/convoiturage.js"</script>
+      </body>
+    </html>
+  </head>
+</html>

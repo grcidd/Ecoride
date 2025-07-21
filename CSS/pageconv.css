@@ -1,0 +1,110 @@
+#recherche-covoiturage {
+    height: 100vh; /* pleine hauteur */
+    display: flex;
+    justify-content: center; /* centré horizontalement */
+    align-items: center;     /* centré verticalement */
+    background-color: #f5f5f5;
+  }
+  
+  #form-recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  #form-recherche h3 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+  
+  #form-recherche input,
+  #form-recherche select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid  #2e7d32;
+    border-radius: 6px;
+  }
+  
+  #form-recherche button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #form-recherche button:hover {
+    background-color: #1b5e20;
+  }
+  
+  footer a {
+    color: #2e7d32;
+    text-decoration: none;
+  }
+  
+ /* ========== TITRE DE SECTION ========== */
+h2.text-success {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ========== STYLE DES CARTES CONDUCTEURS ========== */
+.card {
+  border: 1px solid #e0e0e0; /* Bordure légère */
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== TITRE DU CONDUCTEUR ========== */
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.img {
+  width: 10px;
+}
+
+/* ========== TEXTE DU TRAJET ========== */
+.card-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ========== BOUTON RÉSERVER ========== */
+.card .btn-success {
+  background-color: #2e7d32;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.card .btn-success:hover {
+  background-color: #1b5e20;
+}
+
+/* ========== ESPACEMENT DES CARTES ========== */
+.row.g-4 > .col-md-4 {
+  display: flex;
+  justify-content: center;
+}

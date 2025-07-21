@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – EcoRide</title>
+    <link rel="stylesheet" href="/CSS/contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contactez-nous</h1>
+    </header>
+
+    <main class="container">
+      <p>Une question ? Une suggestion ? Contactez l’équipe EcoRide !</p>
+
+      <form id="contact-form">
+        <label for="nom">Nom</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Votre nom"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="votre@email.com"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Écrivez votre message ici..."
+          required
+        ></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div id="confirmation" class="hidden">✅ Merci pour votre message !</div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EcoRide. Tous droits réservés.</p>
+    </footer>
+
+    <script src="/JS/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoride</title>
+
+    <!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EcoRide</title>
+        <link rel="stylesheet" href="/CSS/pageconv.css" />
+        <link rel="stylesheet" href="/HTML/accueil.html" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <header class="p-3 mb-3 border-bottom bg-light">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-between"
+            >
+              <!-- Logo -->
+              <a
+                href="/images/ECORIDE logo.png"
+                class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+              >
+              </a>
+
+              <!-- Navigation -->
+              <ul class="nav">
+                <li><a href="/images/ECORIDE logo.png"></a></li>
+                <li><a href="/HTML/accueil.html" class="nav-link px-3 text-dark">Accueil</a></li>
+                <li><a href="#" class="nav-link px-3 text-dark">Rides</a></li>
+                <li><a href="/HTML/contact.html" class="nav-link px-3 text-dark">Contact</a></li>
+            
+                <li>
+                  <a href="#" class="nav-link px-3 text-dark">Connexion</a>
+                </li>
+              </ul>
+              <!-- Recherche -->
+                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    Bouton
+                  </font>
+                </font>
+              
+
+              <section class="container mt-5" id="formulaire-recherche">
+                <h2 class="text-center mb-4">Rechercher un covoiturage</h2>
+                <form class="row g-3 justify-content-center">
+                  
+                  <!-- Ville de départ -->
+                  <div class="col-md-3">
+                    <label for="depart" class="form-label">Ville de départ</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="depart"
+                      placeholder="Ex: Paris"
+                    />
+                  </div>
+    
+                  <!-- Ville d’arrivée -->
+                  <div class="col-md-3">
+                    <label for="arrivee" class="form-label">Ville d’arrivée</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="arrivee"
+                      placeholder="Ex: Lyon"
+                    />
+                  </div>
+    
+                  <!-- Date -->
+                  <div class="col-md-3">
+                    <label for="date" class="form-label">Date du trajet</label>
+                    <input type="date" class="form-control" id="date" />
+                  </div>
+
+                  <!-- Nombre de passagers -->
+<div class="col-md-3">
+  <label for="passagers" class="form-label">Nombre de passagers</label>
+  <select id="passagers" class="form-control">
+    <option value="">Choisir...</option>
+    <option value="1">1 passager</option>
+    <option value="2">2 passagers</option>
+    <option value="3">3 passagers</option>
+    <option value="4">4 passagers</option>
+    <option value="5+">5 ou plus</option>
+  </select>
+</div>
+
+
+                  <section class="container mt-5">
+                    <h2 class="text-center mb-4 text-success">Liste des conducteurs disponibles</h2>
+                  
+                    <div class="row g-4">
+                      <!-- Conducteur 1 -->
+                      <div class="col-md-4">
+                        <div class="card shadow-sm">
+                          <div class="card-body">
+                            <h5 class="card-title">🚗 Jason M.</h5>
+                            <p class="card-text">
+                              <strong>Départ :</strong> Paris<br />
+                              <strong>Arrivée :</strong> Lyon<br />
+                              <strong>Date :</strong> 10 juin 2025 - 14h00<br />
+                              <strong>Places dispo :</strong> 3<br />
+                              <strong>Prix :</strong> 10€
+                            </p>
+                            <a href="#" class="btn btn-success">Réserver</a>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Conducteur 2 -->
+                      <div class="col-md-4">
+                        <div class="card shadow-sm">
+                          <div class="card-body">
+                            <h5 class="card-title">🚗 Amina T.</h5>
+                            <p class="card-text">
+                              <strong>Départ :</strong> Marseille<br />
+                              <strong>Arrivée :</strong> Nice<br />
+                              <strong>Date :</strong> 11 juin 2025 - 08h30<br />
+                              <strong>Places dispo :</strong> 2<br />
+                              <strong>Prix :</strong> 8€
+                            </p>
+                            <a href="#" class="btn btn-success">Réserver</a>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Conducteur 3 -->
+                      <div class="col-md-4">
+                        <div class="card shadow-sm">
+                          <div class="card-body">
+                            <h5 class="card-title">🚗 Karim B.</h5>
+                            <p class="card-text">
+                              <strong>Départ :</strong> Lille<br />
+                              <strong>Arrivée :</strong> Bruxelles<br />
+                              <strong>Date :</strong> 12 juin 2025 - 10h00<br />
+                              <strong>Places dispo :</strong> 1<br />
+                              <strong>Prix :</strong> 12€
+                            </p>
+                            <a href="#" class="btn btn-success">Réserver</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+              
+              </header>
+
+        <footer class="text-center p-4 bg-light mt-5 border-top">
+            <p>
+              Contact : <a href="mailto:contact@ecoride.fr">contact@ecoride.fr</a>
+            </p>
+            <a href="/HTML/mentionslgl.html">Mentions légales</a>
+          </footer>
+  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/JS/utilisateur.js"</script>
+      </body>
+    </html>
+  </head>
+</html>
